@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: snow;
 }
 
 textarea {
@@ -70,10 +71,6 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-.row {
-  border-color: black;
-}
-
 #currentDay{
   font-size: 30px;
   color: darkmagenta;
@@ -89,4 +86,13 @@ textarea {
 
 .bg-green{
   background-color: rgb(40, 226, 34);
+}
+
+.material-icons{
+  color: rgb(241, 23, 23);
+}
+
+button{
+  background-color: snow;
+  border: none;
 }

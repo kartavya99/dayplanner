@@ -52,14 +52,14 @@ $("textarea").each(function(){
     var currentTime = parseInt($(this).attr("currentTime"));
     //debugger
     if (currentTime < now ){
-        $("textarea").addClass("bg-blue");
+        $("textarea").addClass("past");
        
     }
      if (currentTime > now ){
-        $(this).addClass("bg-green");
+        $(this).addClass("future");
     }
     if (currentTime === now ){
-        $(this).addClass("bg-red");
+        $(this).addClass("present");
     }
 console.log(currentTime);
 });
@@ -79,9 +79,7 @@ $( "button" ).on( "click", function(){
     localStorage.setItem('5pm' ,JSON.stringify($text17pm.val()));
     
 })
-   
-
-    
+       
  // Web API getItem to read the value stored from local storage     
     $("#text9am").append(JSON.parse(localStorage.getItem("9am")));
     $("#text10am").append(JSON.parse(localStorage.getItem("10am")));
