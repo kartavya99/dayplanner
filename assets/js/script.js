@@ -22,9 +22,8 @@
 
 
 var today = moment().format("dddd, MMMM Do");
-// $("#currentDay").text(today.format("dddd, MMMM Do"));
-console.log(today);
 $("#currentDay").append(today);
+console.log(today);
 
 var now = parseInt(moment().format("HH"));
 console.log(now);
