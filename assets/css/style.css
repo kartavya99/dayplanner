@@ -62,10 +62,10 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  /* background-color: #06aed5; */
   color: white;
 }
 
@@ -92,9 +92,9 @@ textarea {
 } */
 
 .material-icons{
-  color: rgb(241, 23, 23);
-  font-size: 48px;
-}
+  color: rgb(87, 141, 185);
+  font-size: 36px;
+} 
 
 button{
   background-color: snow;
