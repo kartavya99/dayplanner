@@ -79,14 +79,14 @@ textarea {
   color: darkmagenta;
 }
 
+.bg-blue{
+  background-color: rgba(4, 121, 167, 0.281);
+}
+
 .bg-red{
-  background-color: red;
+  background-color: rgb(218, 55, 104);
 }
 
 .bg-green{
-  background-color: green;
-}
-
-.bg-grey{
-  background-color: grey;
+  background-color: rgb(40, 226, 34);
 }

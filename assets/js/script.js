@@ -44,59 +44,55 @@ var $text17pm = $("#text17pm");
 
 
 
-var currentTime = parseInt($(this).attr("currentTime"));
 
-//debugger
+
+
 // // construct a function to show different colours in textarea element
 
 $("textarea").each(function(){
+    var currentTime = parseInt($(this).attr("currentTime"));
+    //debugger
     if (currentTime < now ){
-        $("textarea").addClass("bg-grey");
+        $("textarea").addClass("bg-blue");
+       
     }
- 
-    if (currentTime > now ){
+     if (currentTime > now ){
         $(this).addClass("bg-green");
     }
     if (currentTime === now ){
         $(this).addClass("bg-red");
     }
+console.log(currentTime);
+});
 
+
+// Delegated event handlers for the button element 
+$( "button" ).on( "click", function(){
+    // Web API setItem to store data into local storage and using JSON stringify method to convert it into string
+    localStorage.setItem('9am' ,JSON.stringify($text9am.val()));
+    localStorage.setItem('10am' ,JSON.stringify($text10am.val()));
+    localStorage.setItem('11am' ,JSON.stringify($text11am.val()));
+    localStorage.setItem('12pm' ,JSON.stringify($text12pm.val()));
+    localStorage.setItem('1pm' ,JSON.stringify($text13pm.val()));
+    localStorage.setItem('2pm' ,JSON.stringify($text14pm.val()));
+    localStorage.setItem('3pm' ,JSON.stringify($text15pm.val()));
+    localStorage.setItem('4pm' ,JSON.stringify($text16pm.val()));
+    localStorage.setItem('5pm' ,JSON.stringify($text17pm.val()));
+    
 })
-
-
-
-
-// var workDay = {
-//  $text9am : text9am.value,
-//  $text10am : text10am.value,
-//  $text11am : text11am.value,
-//  $text12pm : text12pm.value,
-//  $text13pm : text13pm.value,
-//  $text14pm : text14pm.value,
-//  $text15pm : text15pm.value,
-//  $text16pm : text16pm.value,
-//  $text17pm : text17pm.value,
-
    
-//     //     // set up items in the local storage
-//     //     localStorage.setItem("9am" , JSON.stringify($text9am.value));
-//     //     localStorage.setItem("10am" , JSON.stringify($text10am.value));
-//     //     localStorage.setItem("11am" , JSON.stringify($text11am.value));
-//     //     localStorage.setItem("12pm" , JSON.stringify($text12pm.value));
-//     //     localStorage.setItem("13am" , JSON.stringify($text13pm.value));
-//     //     localStorage.setItem("14am" , JSON.stringify($text14pm.value));
-//     //   });
-    
-    
-//     // $("#text9am").append(localStorage.getItem("9am"));
-//     // $("#text10am").append(localStorage.getItem("10am"));
-//     // $("#text11am").append(localStorage.getItem("11am"));
-//     // $("#text12pm").append(localStorage.getItem("12pm"));
-//     // $("#text13pm").append(localStorage.getItem("13pm"));
 
     
-
-
+ // Web API getItem to read the value stored from local storage     
+    $("#text9am").append(JSON.parse(localStorage.getItem("9am")));
+    $("#text10am").append(JSON.parse(localStorage.getItem("10am")));
+    $("#text11am").append(JSON.parse(localStorage.getItem("11am")));
+    $("#text12pam").append(JSON.parse(localStorage.getItem("12pm")));
+    $("#text13pm").append(JSON.parse(localStorage.getItem("1pm"))); 
+    $("#text14pm").append(JSON.parse(localStorage.getItem("2pm")));
+    $("#text15pm").append(JSON.parse(localStorage.getItem("3pm")));
+    $("#text16pm").append(JSON.parse(localStorage.getItem("4pm")));
+    $("#text17pm").append(JSON.parse(localStorage.getItem("5pm")));
 
 
 
