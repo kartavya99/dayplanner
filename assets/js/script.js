@@ -12,12 +12,12 @@
 // Acceptance Criteria
 //WHEN I open the planner- THEN the current day is displayed at the top of the calendar - Done
 
-// WHEN I scroll down- THEN I am presented with timeblocks for standard business hours
-// define current hour and compare with timeblocks to indicate past, present and future time blocks.
+// WHEN I scroll down- THEN I am presented with time blocks for standard business hours
+// define current hour and compare with time blocks to indicate past, present and future time blocks.
 
-// WHEN I view the timeblocks for that day - THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-// WHEN I click into a timeblock - THEN I can enter an event
-// WHEN I click the save button for that timeblock - THEN the text for that event is saved in local storage
+// WHEN I view the time blocks for that day - THEN each time block is color coded to indicate whether it is in the past, present, or future
+// WHEN I click into a time block - THEN I can enter an event
+// WHEN I click the save button for that time block - THEN the text for that event is saved in local storage
 // WHEN I refresh the page - THEN the saved events persist
 
 
@@ -44,33 +44,20 @@ var $text17pm = $("#text17pm");
 
 
 
-var timeNow = parseInt($(this).attr("tineNow"));
+var currentTime = parseInt($(this).attr("currentTime"));
+
 //debugger
 // // construct a function to show different colours in textarea element
-// $( "textarea" ).each(function(){
-//     //debugger
-//     if (timeNow < now ){
-//         $(this).addClass("bg-grey");
-//     }
- 
-//     if (timeNow > now ){
-//         $(this).addClass("bg-green");
-//     }
-//     if (timeNow === now ){
-//         $(this).addClass("bg-red");
-//     }
-// })
 
-
-var timeNow = $("textarea").each(function(){
-    if (timeNow < now ){
+$("textarea").each(function(){
+    if (currentTime < now ){
         $("textarea").addClass("bg-grey");
     }
  
-    if (timeNow > now ){
+    if (currentTime > now ){
         $(this).addClass("bg-green");
     }
-    if (timeNow === now ){
+    if (currentTime === now ){
         $(this).addClass("bg-red");
     }
 
