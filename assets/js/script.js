@@ -90,7 +90,7 @@ var timeNow = $("textarea").each(function(){
 //  $text16pm : text16pm.value,
 //  $text17pm : text17pm.value,
 
-//     // $("button").click(function() {
+   
 //     //     // set up items in the local storage
 //     //     localStorage.setItem("9am" , JSON.stringify($text9am.value));
 //     //     localStorage.setItem("10am" , JSON.stringify($text10am.value));
