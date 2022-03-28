@@ -7,6 +7,6 @@ This application is a simple one day task manager that allows user to plan the o
 
 ## Web application picture 
 
-<img src = "assets/images/screenshot.png" width ="400">
+<img src = "assets/images/Screenshot.png" width ="400">
 
 ## https://kartavya99.github.io/dayplanner/
