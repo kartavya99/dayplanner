@@ -1,12 +1,12 @@
 # day planner
 Work day planner
 
-this the app which will allow users to plan the office task through the day
+This application is a simple one day task manager that allows user to plan the office hours for the each hour. This is a browser based application and feature's dynamically updated with HTML. CSS, JavaScript, JQuery and Moment.js.
 
-Work Day Planner constructed using HTML, CSS, JavaScript, Jquery and Moment.js !!!
-Jquery was used to append the elements which were already created in HTML file.
-JavaScript was used for to define the past, present and future time blocks in comparison with currentTime and also used for localStorage web API to store data from the textarea element.
 
-web application works with all functionality 
+
+## Web application picture 
+
+<img src = "assets/images/screenshot.png" width ="400">
 
 ## https://kartavya99.github.io/dayplanner/
