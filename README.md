@@ -13,10 +13,10 @@ This application is a simple one day task manager that allows user to plan the o
 
 ## Technologies - Libraries
 ### - Bootstrap - CSS Framework 
-    - Used for existing html and CSS for creating responsive organizational structure and styling for the site.
+Used for existing html and CSS for creating responsive organizational structure and styling for the site.
 ### - Jquery - JavaScript Library
-    - Used of event event listeners and to store and recall data stored in variable in windows local storage. 
+Used of event event listeners and to store and recall data stored in variable in windows local storage. 
 ### - Moment.js - JavaScript Library
-    - Used for dynamically change and update date and current time block with different colours.
+Used for dynamically change and update date and current time block with different colours.
 
 
